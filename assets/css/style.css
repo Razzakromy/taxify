@@ -1,0 +1,72 @@
+/* Reset Css */
+@import url("./reset.css");
+/* Reset Css */
+
+/* Font Import */
+@font-face {
+    font-family: Montserrat;
+    src: url('./../fonts/Montserrat-Medium.ttf') format('ttf');
+    src: url('./../fonts/Montserrat-SemiBold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('./../fonts/Poppins-Regular.ttf') format('ttf');
+}
+/* Font Import */
+
+/* Common Css */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #787878;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #191919;
+}
+
+a:hover {
+    color: #10c9c3;
+}
+
+::selection {
+    color: #fff;
+    background-color: #10c9c3;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: #10c9c3;
+}
+
+.c_item {
+    padding: 100px 0;
+}
+
+.c_btn {
+    padding: 10px 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #10c9c3;
+    color: #fff;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.c_btn:hover {
+    color: #10c9c3;
+}
+/* Common Css */
