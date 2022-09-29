@@ -21,7 +21,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: #fff;
-    background-color: #232D32;
+    background-color: #1F1F1F;
 }
 
 h1,
@@ -41,12 +41,12 @@ a:hover {
 }
 
 ::selection {
-    color: #232D32;
+    color: #1F1F1F;
     background-color: #FECB18;
 }
 
 ::-moz-selection {
-    color: #232D32;
+    color: #1F1F1F;
     background-color: #FECB18;
 }
 
@@ -64,7 +64,7 @@ a:hover {
     font-size: 15px;
     text-transform: uppercase;
     background-color: #FECB18;
-    color: #232D32;
+    color: #1F1F1F;
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -74,7 +74,7 @@ a:hover {
 
 .c_btn:hover {
   background: #fff;
-    color: #232D32;
+    color: #1F1F1F;
 }
 /* Common Css */
 /* Preloader Start */
@@ -148,6 +148,7 @@ a:hover {
     height: auto;
     margin: 0 auto;
     transition: all 0.35s ease;
+    background: #FFF;
   }
   .header.on-scroll {
     background: hsl(214, 21%, 6%);
@@ -298,7 +299,6 @@ a:hover {
 
 /* Banner Start */
 .banner{
-  margin-top: 80px;
   background: url(../img/home-banner.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -326,7 +326,7 @@ a:hover {
 }
 .slick-dots li button:before {
   font-size: 20px;
-  top: 100px;
+  top: 160px;
 }
 .slick-dots li.slick-active button:before {
   color: #fff;
@@ -340,6 +340,108 @@ a:hover {
   color: #fff;
 }
 /* Banner End */
+
+/* About Start */
+.about{
+  background: #FFF;
+  color: #1F1F1F;
+}
+
+.center_about .img:hover{
+  box-shadow: 0 4px 50px 0 rgb(254, 203, 24,0.9);
+}
+
+
+.right_content .c_btn{
+  border: 1px solid transparent;
+}
+.right_content .c_btn:hover{
+  border: 1px solid #FECB18;
+}
+/* About End */
+
+/* Services Start */
+.services .card {
+  background: #1F1F1F;
+  border: 1px solid #fff;
+  padding: 30px 50px;
+}
+
+.services .card:hover {
+  border: 1px solid #FECB18;
+}
+.services .card:hover i{
+  top: 5px;
+}
+
+.services_icon i {
+  opacity: 0.2;
+  position: absolute;
+  top: 110px;
+  font-size: 100px;
+  right: 5px;
+  color: #FECB18;
+}
+
+/* Services End */
+
+/* Special Start */
+.special{
+  background: #fff;
+  color: #1F1F1F;
+}
+.special_img{
+}
+
+.special_content{
+  
+}
+.special_content h3{
+color: #1F1F1F;
+font-size: 20px;
+}
+.special_content p{
+text-align: justify;
+}
+
+.iconBox{
+  margin-right: 25px;
+  padding: 25px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: #FECB18;
+}
+.ib2{
+  margin-right: 0px;
+  margin-left: 25px;
+}
+.iconBox i{
+  font-size: 25px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+/* Special End */
+
+/* Feature Start */
+.feature{
+
+}
+
+.feature_content{}
+.feature_content .icon {
+  font-size: 40px;
+}
+.feature_content h2{
+  font-size: 60px;
+}
+.feature_content p{
+  margin-top: 10px;
+  font-size: 25px;
+}
+/* Feature End */
 
 /* Choose Start */
 .choose{
@@ -379,14 +481,14 @@ a:hover {
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  color: #232D32;
+  color: #1F1F1F;
   border-radius: 50px;
   border: 2px solid #FECB18;
   transition: all 0.3s ease;
 }
 .items span.active,
 .items span:hover{
-  color: #232D32;
+  color: #1F1F1F;
   background: #FECB18;
 }
 

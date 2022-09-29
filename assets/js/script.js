@@ -106,7 +106,13 @@ $(document).ready(function () {
       autoplay: true,
       autoplaySpeed: 2000,
       dots: true,
+      arrows: false,
       speed: 3000,
    });
+
+   // CounterUp
+   $('.counter').counterUp({
+      time: 5000
+  });
 });
 
