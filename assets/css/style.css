@@ -704,7 +704,7 @@ text-align: justify;
 /* Footer Start */
 footer{
   padding: 50px 0;
-  background: #FFF;
+  background: #fff;
   color: #1F1F1F;
 }
 footer i{
@@ -728,8 +728,8 @@ footer i:hover{
   margin-top: 5px;
 }
 .footer_text_3 li:hover a{
-  border-left: 2px solid #d3bf77;
-  border-right: 2px solid #d3bf77;
+  border-left: 2px solid #FECB18;
+  border-right: 2px solid #FECB18 ;
   padding: 0 10px;
 }
 
