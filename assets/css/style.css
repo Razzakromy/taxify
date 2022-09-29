@@ -704,6 +704,8 @@ text-align: justify;
 /* Footer Start */
 footer{
   padding: 50px 0;
+  background: #FFF;
+  color: #1F1F1F;
 }
 footer i{
   margin-right: 5px;
