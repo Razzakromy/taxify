@@ -148,7 +148,7 @@ a:hover {
     height: auto;
     margin: 0 auto;
     transition: all 0.35s ease;
-    background: #FFF;
+    color: #1F1F1F;
   }
   .header.on-scroll {
     background: hsl(214, 21%, 6%);
