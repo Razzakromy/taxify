@@ -41,13 +41,13 @@ a:hover {
 }
 
 ::selection {
-    color: #fff;
-    background-color: #232D32;
+    color: #232D32;
+    background-color: #FECB18;
 }
 
 ::-moz-selection {
-    color: #fff;
-    background-color: #232D32;
+    color: #232D32;
+    background-color: #FECB18;
 }
 
 .c_item {
@@ -359,6 +359,280 @@ a:hover {
   width: 100px;
 }
 
+/* Filter Start */
+.wrapper {
+  margin: 30px auto;
+  max-width: 1100px;
+}
+.wrapper nav{
+  display: flex;
+  justify-content: center;
+}
+.wrapper .items{
+  display: flex;
+  max-width: 720px;
+  width: 100%;
+  justify-content: space-between;
+}
+.items span{
+  padding: 7px 25px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #232D32;
+  border-radius: 50px;
+  border: 2px solid #FECB18;
+  transition: all 0.3s ease;
+}
+.items span.active,
+.items span:hover{
+  color: #232D32;
+  background: #FECB18;
+}
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.gallery .image{
+  width: calc(100% / 4);
+  padding: 7px;
+}
+.gallery .image span{
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery .image img{
+  width: 100%;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+.gallery .image:hover img{
+  transform: scale(1.1);
+}
+.gallery .image.hide{
+  display: none;
+}
+.gallery .image.show{
+  animation: animate 0.4s ease;
+}
+@keyframes animate {
+  0%{
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.preview-box{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: #fff;
+  max-width: 700px;
+  width: 100%;
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 3px;
+  padding: 0 5px 5px 5px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+.preview-box.show{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.3s ease;
+}
+.preview-box .details{
+  padding: 13px 15px 13px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.details .title{
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+}
+.details .title p{
+  font-weight: 500;
+  margin-left: 5px;
+}
+.details .icon{
+  color: #fecb18;
+  font-style: 22px;
+  cursor: pointer;
+}
+.preview-box .image-box{
+  width: 100%;
+  display: flex;
+}
+.image-box img{
+  width: 100%;
+  border-radius: 0 0 3px 3px;
+}
+.shadow{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: none;
+  background: rgba(0,0,0,0.4);
+}
+.shadow.show{
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .gallery .image{
+    width: calc(100% / 3);
+  }
+}
+@media (max-width: 800px) {
+  .gallery .image{
+    width: calc(100% / 2);
+  }
+}
+@media (max-width: 700px) {
+  .wrapper nav .items{
+    max-width: 600px;
+  }
+  nav .items span{
+    padding: 7px 15px;
+  }
+}
+@media (max-width: 600px) {
+  .wrapper{
+    margin: 30px auto;
+  }
+  .wrapper nav .items{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav .items span{
+    margin: 5px;
+  }
+  .gallery .image{
+    width: 100%;
+  }
+}
+/* Filter End */
+
 /* Choose End */
+
+/* DriverHire Start */
+.profile {
+  max-width: 300px;
+  background-color: #FFF;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.profile img {
+  transition: all linear 0.25s;
+}
+
+.profile .profile-name {
+  position: absolute;
+  left: 30px;
+  bottom: 70px;
+  font-size: 30px;
+  color: #FFF;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  transition: all linear 0.25s;
+}
+
+.profile .profile-icons {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  color: #FFF;
+  transition: all linear 0.25s;
+}
+
+.profile .profile-username {
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+  color: #FFF;
+  font-size: 16px;
+  transition: all linear 0.25s;
+}
+
+.profile .profile-icons .fab {
+  margin: 5px;
+}
+
+.profile:hover {
+  box-shadow: 0 4px 50px 0 rgba(254, 203, 24, 0.9);
+}
+
+.profile:hover img {
+  filter: grayscale(100%);
+  }
+
+.profile:hover .profile-name {
+  bottom: 80px;
+  color: #FECB18;
+}
+
+.profile:hover .profile-username {
+  bottom: 60px;
+  color: #FECB18;
+}
+
+.profile:hover .profile-icons {
+  right: 40px;
+}
+/* DriverHire End */
+
+/* Footer Start */
+footer{
+  padding: 50px 0;
+}
+footer i{
+  margin-right: 5px;
+}
+footer ul{
+  padding-left: 0;
+}
+
+footer i:hover, footer a:hover{
+  color: #FECB18;
+}
+footer i:hover{
+  transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+}
+.footer_text_3 li{
+  margin-top: 5px;
+}
+.footer_text_3 li:hover a{
+  border-left: 2px solid #d3bf77;
+  border-right: 2px solid #d3bf77;
+  padding: 0 10px;
+}
+
+.footer_text_4 i{
+  font-size: 30px;
+}
+
+/* Footer End */
 
 
