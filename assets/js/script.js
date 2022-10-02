@@ -103,8 +103,6 @@ function preview(element){
 $(document).ready(function () {
    // Slick Carousel
    $('.slick').slick({
-      autoplay: true,
-      autoplaySpeed: 2000,
       dots: true,
       arrows: false,
       speed: 3000,

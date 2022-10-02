@@ -169,7 +169,7 @@ a:hover {
   
   .brand {
     font-family: Exo2;
-    font-size: 1.625rem;
+    font-size: 30px;
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: -1px;
@@ -204,7 +204,7 @@ a:hover {
   }
   .menu-link {
     font-family: Exo2;
-    font-size: 1.5rem;
+    font-size: 20px;
     font-weight: 500;
     line-height: 1.5;
     color: #FECB18;
@@ -229,9 +229,7 @@ a:hover {
       column-gap: 2rem;
       margin: 0 auto;
     }
-    .menu-link {
-      text-transform: capitalize;
-    }
+  
     .menu-block {
       margin-left: 2rem;
     }
@@ -307,7 +305,7 @@ a:hover {
   color: #fff;
 }
 .dark_overlay{
-  background-color: rgba(0, 0, 0,0.5);
+  background-color: rgba(0, 0, 0,0.7);
   min-height: 700px;
 }
 .banner_content{
@@ -325,8 +323,8 @@ a:hover {
   margin-top: 30px;
 }
 .slick-dots li button:before {
-  font-size: 20px;
-  top: 160px;
+  font-size: 15px;
+  top: 245px;
 }
 .slick-dots li.slick-active button:before {
   color: #fff;
