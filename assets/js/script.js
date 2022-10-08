@@ -42,7 +42,7 @@ document.addEventListener("readystatechange", (event) => {
       // when loader is invisible remove it from the DOM
       setTimeout(() => {
          loaderEl.parentNode.removeChild(loaderEl);
-      }, 350);
+      }, 1000);
    }
 });
 
