@@ -318,7 +318,7 @@ a:hover {
   letter-spacing: 5px;
 }
 .banner_content h1{
-  font-size: 65px;
+  font-size: 60px;
   color: #FECB18;
 }
 .banner_content p.details {
@@ -765,7 +765,13 @@ text-align: justify;
 }
 /* Testimonial End */
 /* Contact Start */
-
+.contact {
+  background: url('../img/contact.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 .contact-form {
   padding: 30px 40px;
   background-color: #0c0f13;
